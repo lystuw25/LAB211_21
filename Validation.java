@@ -32,7 +32,7 @@ public class Validation {
         while(true){
             try{
                 int result = Integer.parseInt(sc.nextLine().trim());
-                if(result<0){
+                if(result<=0){
                     throw new Exception("Must be positive.");
                 }else return result;
             }catch (Exception e){
